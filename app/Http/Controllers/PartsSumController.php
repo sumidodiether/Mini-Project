@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 
 class PartsSumController extends Controller
 {
+    public function index()
+    {
+        return view('Machine_Problem1.index');
+    }
+
     public function part_sums(Request $request)
     {
         $number = $request->input('ls');

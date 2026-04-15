@@ -18,6 +18,12 @@
                     <x-nav-link :href="route('employees.index')" :active="request()->routeIs('employees.*')">
                         {{ __('Employee') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('sumparts.index')" :active="request()->routeIs('sumparts.*')">
+                        {{ __('Machine-Problem1') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('bottle.index')" :active="request()->routeIs('bottle.*')">
+                        {{ __('Machine-Problem2') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -75,6 +81,9 @@
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('employees.index')" :active="request()->routeIs('employees.*')">
                 {{ __('Employee') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('sumparts.index')" :active="request()->routeIs('sumparts.*')">
+                {{ __('Machine-Problem1') }}
             </x-responsive-nav-link>
         </div>
 
