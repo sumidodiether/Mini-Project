@@ -82,7 +82,7 @@ class EmployeeController extends Controller
         return redirect()->route('employees.index')->with('success', 'Employee deleted!');
     }
 
-    private function getSummaryData()
+    private function Summary()
     {
         $employees = Employee::all();
 
@@ -102,7 +102,7 @@ class EmployeeController extends Controller
 
         return view('dashboard', array_merge(
             ['employees' => $employees],
-            $this->getSummaryData()
+            $this->Summary()
         ));
     }
 }
