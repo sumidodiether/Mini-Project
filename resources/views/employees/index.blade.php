@@ -10,7 +10,7 @@
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     <div style="float: right; margin-bottom: 20px;">
-                        <a href="{{ route('employees.create') }}" class="btn btn-primary mb-3 border" style="padding: 10px; background-color:blue;">
+                        <a href="{{ route('employees.create') }}" class="btn btn-primary mb-3 border" style="padding: 10px; background-color:blue; color:white;">
                         + Add Employee
                     </a>
                     </div>
@@ -34,12 +34,12 @@
                                 <td>{{ $emp->birthday }}</td>
                                 <td>{{ $emp->monthly_salary }}</td>
                                 <td>
-                                    <a href="{{ route('employees.edit', $emp->id) }}" class="btn btn-warning btn-sm border" style="padding: 5px 10px; background-color:orange;">Edit</a>
+                                    <a href="{{ route('employees.edit', $emp->id) }}" class="btn btn-warning btn-sm border" style="padding: 5px 10px; background-color:orange; color:white;">Edit</a>
 
                                     <form action="{{ route('employees.destroy', $emp->id) }}" method="POST" style="display:inline;" onsubmit="return confirm('Are you sure you want to delete this employee?');">
                                         @csrf
                                         @method('DELETE')
-                                        <button class="btn btn-danger btn-sm border" style="padding: 3px 10px; background-color:red;">Delete</button>
+                                        <button class="btn btn-danger btn-sm border" style="padding: 3px 10px; background-color:red; color:white;">Delete</button>
                                     </form>
                                 </td>
                             </tr>

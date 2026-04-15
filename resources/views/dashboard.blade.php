@@ -22,13 +22,13 @@
                         </div>
 
                         <div class="text-center">
-                            <h5>Average Age</h5>
+                            <h5>Average Age of All Employee</h5>
                             <h3 class="text-xl font-bold">{{ round($averageAge) }}</h3>
                         </div>
 
                         <div class="text-center">
-                            <h5>Total Salary</h5>
-                            <h3 class="text-xl font-bold">{{ $totalSalary }}</h3>
+                            <h5>Total Salary of All Employee</h5>
+                            <h3 class="text-xl font-bold">₱{{ $totalSalary }}</h3>
                         </div>
                     </div>
                 </div>
